@@ -12,6 +12,7 @@
   <script src="ar-hit-test.js"></script>
   <script src="model-viewer.js"></script>
   <script src="background-gradient.js"></script>
+  <script src="javascript.js"></script>
 </head>
 <body>
 
