@@ -1,0 +1,33 @@
+:root {
+    --purple: #240F6E;
+}
+
+* {
+    font-family: 'Open Sans', serif;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+main {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.start-anchor {
+    padding: 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    background-color: var(--purple);
+}
