@@ -2,6 +2,14 @@
 
 Instructions about 3D models management.
 
+# Requirements
+
+- **Android**: no problems about Android version; have to check what a "minimum" power might need for good performances. Probably phones of latest 6 years work good. Tested on Huawei P20.
+Suggested browser: Chrome
+
+- **iOS**: works great from iPhone 8 and later (tested iPhone 8 and iPhone 11)
+Suggested browser: Safari as preferred. Chrome works only on iOS 14 and later.
+
 # How to set up models for the AR
 
 Inside the `models` folder, please insert a new folder named as `model<value>` where "value" is the reference to the marker,
