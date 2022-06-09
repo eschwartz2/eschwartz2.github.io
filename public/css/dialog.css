@@ -1,0 +1,58 @@
+#dialog {
+    position: absolute;
+    height: 90%;
+    top: 4rem;
+    left: 0;
+    margin: 1rem;
+    border-radius: 5px;
+    background: var(--brand-blue);
+    z-index: 999999;
+    display: flex;
+    flex-direction: column;
+    color: var(--brand-purple);
+}
+
+#dialog .container {
+    overflow: hidden;
+    margin-bottom: 1rem;
+}
+
+#dialog .title {
+    padding: 1rem;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+    height: 3rem;
+    margin-bottom: 0;
+}
+
+#dialog .description {
+    height: calc(100% - 10rem);
+    min-height: 300px;
+    padding: 1rem;
+    overflow: auto;
+}
+
+#dialog button[data-action='close-dialog'] {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    background: var(--brand-purple);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--brand-purple);
+  border-radius: 3px;
+}
+
+button[data-action='activate-help'] > img {
+    width: 2rem;
+    height: 2rem;
+}
+
+

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+    <head>
+        <title>Kaplan AR Study Tool</title>
+        <link rel="icon" type="image/x-icon" href="./favicon.ico"/>
+    </head>
+<html>
+    <script src="./vendor/aframe.js"></script>
+    <script src="./vendor/ar.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+
+    <script src="./js/gesture-detector.js"></script>
+    <script src="./js/gesture-handler.js"></script>
+    <script src="./js/model-resizer.js"></script>
+    <script src="./js/lib.js"></script>
+    <script src="./js/ar.js"></script>
+
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+    <link rel="stylesheet" href="./css/index.css">
+
+    <body>
+        <div class="topbar">
+            <img src="./assets/logo.svg"/>
+            <span>AR Study Tool</span>
+        </div>
+        <div class="permissions-dialog-wrapper">
+            <div class="ar permissions-dialog">
+                <div class="camera-info">
+                    <div class="icon-container">
+                        <img src="./assets/camera.svg "/>
+                    </div>
+                    <div class="text">
+                        <span>Press 'allow' to</span>
+                        <span>give camera access</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="target-container">
+            <div class="text-container">
+                <img src="./assets/map--identify.svg "/>
+                <span>Frame the marker</span>
+            </div>
+        </div>
+
+        <div class="camera-instructions">
+            <div class="text"></div>
+            <a class="start-anchor" href="./ar.html">RESTART</a>
+        </div>
+
+        <div class="instructions">
+            <div class="k-loader">
+                <svg class="circular-loader" viewBox="25 25 50 50" >
+                    <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke="#240F6E" stroke-width="3" />
+                </svg>
+                <img src="assets/kloader.gif"/>
+            </div>
+            <p>Loading, please wait...</p>
+            <div class="gestures">
+                <div class="gestures-inner">
+                    <div class="gesture">
+                        <img src="./assets/pinch.svg">
+                        <span>zoom</span>
+                    </div>
+                    <div class="gesture">
+                        <img src="./assets/flick.svg">
+                        <span>rotate</span>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <div class="icon-container">
+                        <img src="./assets/touch--2.svg "/>
+                    </div>
+                    <div class="text">
+                        <span>How to interact</span>
+                        <span>with the model</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <a-scene
+            vr-mode-ui="enabled: false;"
+            device-orientation-permission-ui="enabled: false"
+            embedded
+            renderer="logarithmicDepthBuffer: true;"
+            gesture-detector
+            gesture-handler="minScale: 0.25; maxScale: 10"
+            arjs="sourceType: webcam; debugUIEnabled: false; patternRatio: 0.65; detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_9_3;">
+
+            <a-marker type="barcode" marker-react value="61" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance=".01"
+                smoothThreshold="5">
+                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
+
+                <div class="model-title">
+                    Title for the #61 model.
+                </div>
+
+                <div class="model-description">
+                    Long text description for the #61 model.
+                </div>
+            </a-marker>
+
+            <a-marker type="barcode" marker-react value="62" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance=".01"
+                smoothThreshold="5">
+                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
+            </a-marker>
+
+            <a-marker type="barcode" marker-react value="87" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance=".01"
+                smoothThreshold="5">
+                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
+            </a-marker>
+
+            <a-marker type="barcode" marker-react value="90" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance=".01"
+                smoothThreshold="5">
+                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
+                <div class="model-title">
+                    Title for the #90 model.
+                </div>
+
+                <div class="model-description">
+                    Long text description for the #90 model.
+                </div>
+            </a-marker>
+
+            <a-marker type="barcode" marker-react value="115" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance=".01"
+                smoothThreshold="5">
+                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
+            </a-marker>
+
+            <a-marker type="barcode" marker-react value="117" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance=".01"
+                smoothThreshold="5">
+                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
+            </a-marker>
+
+            <a-marker type="barcode" marker-react value="123" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance=".01"
+                smoothThreshold="5">
+                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
+            </a-marker>
+
+            <a-marker type="barcode" marker-react value="125" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance=".01"
+                smoothThreshold="5">
+                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
+            </a-marker>
+
+            <a-marker type="barcode" marker-react value="126" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance=".01"
+                smoothThreshold="5">
+                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
+            </a-marker>
+
+            <a-marker type="barcode" marker-react value="142" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
+                smooth="true"
+                smoothCount="10"
+                smoothTolerance=".01"
+                smoothThreshold="5">
+                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
+            </a-marker>
+
+            <a-entity id="cam" camera></a-entity>
+            <a-entity id="isolated-cam" camera="active: false" look-controls>
+                <a-entity id="isolated-mode" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
+                    model-resizer class="clickable" animation-mixer position="0 0 -3"></a-entity>
+                </a-entity>
+            </a-entity>
+        </a-scene>
+
+        <div id="dialog" class="hidden">
+            <button data-action="close-dialog" class="round-button button-small">
+                <img src="./assets/close.svg " style="width: 2rem; height: 2rem"/>
+            </button>
+            <div class="container">
+                <p class="title"></p>
+                <section class="description"></section>
+            </div>
+        </div>
+
+        <!-- TODO Activate this when we know where to redirect user for assistance -->
+        <!-- <button data-action="activate-help" class="round-button button-small">
+            <img src="./assets/help.svg "/>
+        </button> -->
+
+        <div class="buttons hidden">
+            <button data-action="activate-info" class="round-button hidden">
+                <img src="./assets/information.svg" style="width: 2.5rem"/>
+            </button>
+            <button data-action="activate-isolated" class="round-button">
+                <img src="./assets/3D.svg " style="width: 2.25rem" />
+            </button>
+            <button data-action="deactivate-isolated" class="round-button hidden">
+                <img src="./assets/AR.svg " style="width: 1.85rem;">
+            </button>
+        </div>
+    </body>
+</html>

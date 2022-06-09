@@ -1,0 +1,285 @@
+@import url('./ar.css');
+@import url('./instructions.css');
+@import url('./dialog.css');
+
+:root {
+    --brand-purple: #230F6D;
+    --brand-blue: #00A3D9;
+    --brand-green: #4E9D2B;
+    --brand-yellow: #FFC82D;
+}
+
+* {
+    font-family: 'Open Sans', serif !important;
+}
+
+html {
+    position: relative;
+    position: fixed;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background: rgb(255,255,255);
+    background: radial-gradient(circle, rgba(255,255,255,1) 75%, rgba(204,204,204,1) 100%);
+}
+
+.hidden {
+    display: none !important;
+}
+
+.topbar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 3rem;
+    background-color: var(--brand-purple);
+    z-index: 1;
+    color: white;
+    box-shadow: 0 3px #2010691A;
+}
+
+.topbar img {
+    margin-left: 1rem;
+    width: 5rem;
+    height: 2rem;
+}
+
+.topbar span {
+    margin-right: 1rem;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+}
+
+main {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, var(--brand-purple), var(--brand-blue));
+}
+
+.camera-info {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 5vh;
+    margin-bottom: 4rem;
+    text-transform: uppercase;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.camera-info .text {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon-container {
+    display: flex;
+}
+
+.camera-info img {
+    margin-right: 1rem;
+    height: 3rem;
+    width: 3rem;
+}
+
+.start-badge {
+    margin-bottom: 20vh;
+}
+
+.start-badge,
+.start-anchor {
+    margin-left: 20px;
+}
+
+.start-badge img {
+    height: 10rem;
+    width: 10rem;
+    margin-top: 8rem;
+}
+
+.start-anchor {
+    letter-spacing: 2px;
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 8rem;
+    text-align: center;
+    background-color: var(--brand-purple);
+}
+
+.permissions-dialog-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, var(--brand-purple), var(--brand-blue));
+}
+
+.camera-instructions {
+    position: absolute;
+    top: 3rem;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    z-index: 1000;
+    padding-top: 5vh;
+    background: linear-gradient(90deg, var(--brand-purple), var(--brand-blue));
+}
+
+.camera-instructions .text {
+    color: white;
+    padding: 2rem;
+    text-transform: uppercase;
+    font-weight: b;
+    font-weight: bold;
+    position: absolute;
+    bottom: 15%;
+    left: 0;
+}
+
+.camera-instructions .start-anchor {
+    margin-left: 0;
+    width: auto;
+    margin-top: 20%;
+}
+
+.circular-loader {
+    -webkit-animation: rotate 5s linear infinite;
+            animation: rotate 5s linear infinite;
+    height: 100%;
+    -webkit-transform-origin: center center;
+        -ms-transform-origin: center center;
+            transform-origin: center center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: auto;
+}
+
+.loader-path {
+    stroke-dasharray: 150,200;
+    -webkit-animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+            animation: dash 1.5s ease-in-out infinite, color 6s ease-in-out infinite;
+    animation-duration: 5s;
+}
+
+#arjs-video.lighter {
+    opacity: 0.5;
+}
+
+.round-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
+    border-radius: 100%;
+    width: 4rem;
+    height: 4rem;
+    border: none;
+    background-color: white;
+    color: var(--brand-purple);
+    font-weight: bold;
+    color: var(--brand-purple);
+    font-size: 1rem;
+}
+
+button[data-action='activate-help'] {
+    position: absolute;
+    top: 5rem;
+    right: 2rem;
+    background-color: var(--brand-purple);
+    color: white;
+}
+
+.button-small {
+    width: 2rem;
+    height: 2rem;
+}
+
+.buttons {
+    position: absolute;
+    bottom: 5%;
+    left: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+@keyframes rotate {
+    100% {
+      -webkit-transform: rotate(360deg);
+              transform: rotate(360deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+      stroke-dasharray: 1,200;
+      stroke-dashoffset: 0;
+    }
+
+    50% {
+      stroke-dasharray: 89,200;
+      stroke-dashoffset: -35;
+    }
+
+    100% {
+      stroke-dasharray: 89,200;
+      stroke-dashoffset: -124;
+    }
+}
+
+@keyframes color {
+    0% {
+      stroke: var(--brand-purple);
+    }
+
+    40% {
+      stroke: var(--brand-purple);
+    }
+
+    66% {
+      stroke: var(--brand-purple);
+    }
+
+    80%, 90% {
+      stroke: var(--brand-purple);
+    }
+}
