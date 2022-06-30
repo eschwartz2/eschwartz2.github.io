@@ -35,8 +35,7 @@ window.cameraiOSInstructions = `
 
 window.cameraAndroidInstructions = `
     You need to allow camera access to use Augmented Reality. Please, follow these steps:
-    reset your settings for this website using the button on the left corner of
-    your Browser address bar,
+    reset your settings for this website using the locker button on your Browser address bar,
     then click on "Permissions" and "Reset permissions".
     Then, click on "RESTART" to try again.
 `;
