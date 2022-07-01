@@ -20,9 +20,12 @@ const openInfoDialog = () => {
     if (window.activeTitle) {
         dialog.querySelector('.title').innerText = window.activeTitle;
     }
+
     if (window.activeDescription) {
         dialog.querySelector('.description').innerText = window.activeDescription;
     }
+
+    window.track('info-open', { marker: window.currentModel.code });
 };
 
 const openHelpDialog = () => {
@@ -34,6 +37,8 @@ const openHelpDialog = () => {
     dialog.classList.remove('hidden');
     dialog.querySelector('.title').innerText = 'Support';
     dialog.querySelector('.description').innerText = 'Here we can add text or links to give user assistance about this app.';
+
+    window.track('help-open');
 };
 
 window.handleReactiveRenderingBug = () => {
@@ -101,7 +106,10 @@ AFRAME.registerComponent('marker-react', {
             window.currentModel = {
                 src: `./models/model${modelCode}/scene.glb`,
                 scale: this.el.getAttribute('scale'),
+                code: modelCode,
             };
+
+            window.track('marker-scan', { marker: window.currentModel.code });
 
             // show info button if description OR title are available
             const modelTitle = this.el.querySelector('.model-title');
@@ -162,6 +170,8 @@ AFRAME.registerComponent('marker-react', {
                 isolated.setAttribute('gltf-model', window.currentModel.src);
                 isolated.setAttribute('scale', window.currentModel.scale);
                 isolated.setAttribute('visible', true);
+
+                window.track('freeze-mode-start', { marker: window.currentModel.code });
 
                 scene.dispatchEvent(new CustomEvent('isolated-start', {
                     detail: {

@@ -39,3 +39,15 @@ window.cameraAndroidInstructions = `
     then click on "Permissions" and "Reset permissions".
     Then, click on "RESTART" to try again.
 `;
+
+window.track = (eventName, data = {}) => {
+    if (!window.dataLayer) {
+        console.debug('window.dataLayer is not defined');
+        return;
+    }
+
+    window.dataLayer.push({
+        event: eventName,
+        ...data,
+    });
+}
