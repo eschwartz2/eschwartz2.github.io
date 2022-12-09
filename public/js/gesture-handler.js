@@ -38,6 +38,11 @@ AFRAME.registerComponent("gesture-handler", {
 
         this.scene.addEventListener('isolated-start', (e) => {
             window.isolated = e.detail.model;
+
+            // set to the isolated model the same scale as the current model
+            window.isolated.object3D.scale.x = this.scaleFactor * this.initialScale;
+            window.isolated.object3D.scale.y = this.scaleFactor * this.initialScale;
+            window.isolated.object3D.scale.z = this.scaleFactor * this.initialScale;
         });
 
         this.scene.addEventListener('isolated-end', () => {

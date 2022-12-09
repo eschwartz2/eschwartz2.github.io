@@ -4,14 +4,7 @@ AFRAME.registerComponent('model-resizer', {
         target: { default: '' },
     },
     init: function() {
-        this.assetParam = {
-            scale: 1.0,
-            size: {
-                width: 1.0,
-                height: 1.0,
-                depth: 1.0,
-            },
-        };
+        this.scale = 1.0;
 
         this.target = this.data.target ? document.querySelector(this.data.target) : document.body;
 
@@ -21,28 +14,24 @@ AFRAME.registerComponent('model-resizer', {
 
             try {
                 var model = this.el.object3D;
-                var box = new THREE.Box3().setFromObject(model);
+                this.scale = 1.0;
+                const sphere = new THREE.Box3().setFromObject(model).getBoundingSphere(new THREE.Sphere());
 
-                this.assetParam.scale = 1;
-                this.assetParam.size = {
-                    width: box.max.x - box.min.x,
-                    height: box.max.y - box.min.y,
-                    depth: box.max.z - box.min.z,
-                };
+                // radius and theta values are based on current camera parameters.
+                // If you change the camera parameters, you need to change these values
+                const radius = 3;
+                const theta = 45 / 2 / 180 * Math.PI;
 
-                var max = Math.max(box.max.x, box.max.y, box.max.z);
+                const aspect = Math.min(this.target.offsetWidth - 20, this.target.offsetHeight - 20) / this.target.offsetHeight;
+                this.currScale = aspect * radius * Math.sin(theta) / sphere.radius;
 
-                if (!isNaN(max) && max !== Infinity && max > 0.1) {
-                    this.currScale = 2 / max; // 2 is according the experience, need to be confirmed;
-                    this.minScale = 0.1 * this.currScale;
-                    this.maxScale = 3 * this.currScale;
-                    this.scaleStep = this.minScale;
-                    this.assetParam.scale = this.currScale;
+                this.minScale = 0.1 * this.currScale;
+                this.maxScale = 3 * this.currScale;
+                this.scaleStep = this.minScale;
+                this.scale = this.currScale;
 
-                    this.el.setAttribute('scale', `${this.currScale} ${this.currScale} ${this.currScale}`);
-                    this.el.setAttribute('original-scale', this.currScale);
-                }
-
+                this.el.setAttribute('scale', `${this.currScale} ${this.currScale} ${this.currScale}`);
+                this.el.setAttribute('original-scale', this.currScale);
                 this.el.setAttribute('model-loaded', true);
 
                 const isolatedButton = document.querySelector('[data-action="activate-isolated"');

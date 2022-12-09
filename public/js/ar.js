@@ -25,7 +25,14 @@ const openInfoDialog = () => {
         dialog.querySelector('.description').innerText = window.activeDescription;
     }
 
-    window.track('info-open', { marker: window.currentModel.code });
+    if (window.dataLayer) {
+        window.dataLayer.push({
+            event: 'info-open',
+            marker: window.currentModel.code,
+        });
+    } else {
+        console.debug('dataLayer not found');
+    }
 };
 
 const openHelpDialog = () => {
@@ -38,7 +45,13 @@ const openHelpDialog = () => {
     dialog.querySelector('.title').innerText = 'Support';
     dialog.querySelector('.description').innerText = 'Here we can add text or links to give user assistance about this app.';
 
-    window.track('help-open');
+    if (window.dataLayer) {
+        window.dataLayer.push({
+            event: 'help-open',
+        });
+    } else {
+        console.debug('dataLayer not found');
+    }
 };
 
 window.handleReactiveRenderingBug = () => {
@@ -91,6 +104,16 @@ AFRAME.registerComponent('marker-react', {
                 return;
             }
 
+            // non va qui ma sotto
+            if (window.dataLayer) {
+                window.dataLayer.push({
+                    event: 'marker-scan',
+                    marker: window.currentModel.code,
+                });
+            } else {
+                console.debug('dataLayer not found');
+            }
+
             if (!window.firstFound) {
                 window.firstFound = true;
                 document.querySelector('.target-container')?.remove();
@@ -108,8 +131,6 @@ AFRAME.registerComponent('marker-react', {
                 scale: this.el.getAttribute('scale'),
                 code: modelCode,
             };
-
-            window.track('marker-scan', { marker: window.currentModel.code });
 
             // show info button if description OR title are available
             const modelTitle = this.el.querySelector('.model-title');
@@ -171,7 +192,14 @@ AFRAME.registerComponent('marker-react', {
                 isolated.setAttribute('scale', window.currentModel.scale);
                 isolated.setAttribute('visible', true);
 
-                window.track('freeze-mode-start', { marker: window.currentModel.code });
+                if (window.dataLayer) {
+                    window.dataLayer.push({
+                        event: 'freeze-mode-start',
+                        marker: window.currentModel.code,
+                    });
+                } else {
+                    console.debug('dataLayer not found');
+                }
 
                 scene.dispatchEvent(new CustomEvent('isolated-start', {
                     detail: {
@@ -216,7 +244,7 @@ window.addEventListener('arjs-video-loaded', () => {
         target.style.display = 'flex';
     }
 
-    window.eraseCookie('camera-denied');
+    // window.eraseCookie('camera-denied');
 })
 
 window.addEventListener('camera-error', () => {

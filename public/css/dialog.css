@@ -1,8 +1,10 @@
 #dialog {
     position: absolute;
-    height: 90%;
+    left: 45%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    height: 80%;
     top: 4rem;
-    left: 0;
     margin: 1rem;
     border-radius: 5px;
     background: var(--brand-blue);

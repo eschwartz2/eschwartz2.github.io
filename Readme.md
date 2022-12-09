@@ -69,9 +69,9 @@ For example: for the first model, `61` is the value. We have to create a `model6
 
 ## How to add the info text for the models
 
-Inside the `<a-marker>` HTML tag, it is possible to add two HTML `div` elements, one to show the resource title and the other for the resource description. If at least one of the two is available, the "information" button is shown and the user can click on it to activate the resource information page.
+Inside the `<a-marker>` HTML tag, it is possible to add two HTML `div` elements, one to show the resource title and the other for the resource description. **If at least one of the two is available**, the "info button" is shown and the user can click on it to show the model info page.
 
-See on the examples above on how to add those information for a model just modifying the `ar.html` file.
+See on the examples above on how to add those information for a model by modifying the `ar.html` file.
 
 # How to create a .glb model from a .gltf file
 
@@ -86,3 +86,12 @@ gltf-pipeline -i model.gltf -o model.glb
 ```
 
 where "model.gltf" is the path of the .gltf file to convert and "model.glb" is the output file name.
+
+# Technical details about Markers
+
+Markers used on this project are 2D Barcode Matrix marker with following parameteres:
+- Border size 0.15 % of marker width
+- Dimensions: 4x4
+- Error checking and correction type: BCH 13_9_3
+
+For a max number of 512 available markers (value range: 0 - 511).
