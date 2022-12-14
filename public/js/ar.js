@@ -17,6 +17,9 @@ const openInfoDialog = () => {
 
     dialog.classList.remove('hidden');
 
+    dialog.querySelector('.title').innerText = '';
+    dialog.querySelector('.description').innerText = '';
+
     if (window.activeTitle) {
         dialog.querySelector('.title').innerText = window.activeTitle;
     }
@@ -104,16 +107,6 @@ AFRAME.registerComponent('marker-react', {
                 return;
             }
 
-            // non va qui ma sotto
-            if (window.dataLayer) {
-                window.dataLayer.push({
-                    event: 'marker-scan',
-                    marker: window.currentModel.code,
-                });
-            } else {
-                console.debug('dataLayer not found');
-            }
-
             if (!window.firstFound) {
                 window.firstFound = true;
                 document.querySelector('.target-container')?.remove();
@@ -132,6 +125,21 @@ AFRAME.registerComponent('marker-react', {
                 scale: this.el.getAttribute('scale'),
                 code: modelCode,
             };
+
+            if (window.dataLayer) {
+                window.dataLayer.push({
+                    event: 'marker-scan',
+                    marker: window.currentModel.code,
+                });
+            } else {
+                console.debug('dataLayer not found');
+            }
+
+            const buttonsDiv = document.querySelector('.buttons');
+
+            if (buttonsDiv?.classList.contains('hidden')) {
+                buttonsDiv?.classList.remove('hidden');
+            }
 
             // show info button if description OR title are available
             const modelTitle = this.el.querySelector('.model-title');
@@ -157,7 +165,7 @@ AFRAME.registerComponent('marker-react', {
                     return;
                 }
 
-                document.querySelector('.buttons')?.classList.remove('hidden');
+                buttonsDiv?.classList.remove('hidden');
                 isolatedButton.classList.remove('hidden');
             }
 
@@ -202,6 +210,8 @@ AFRAME.registerComponent('marker-react', {
                     console.debug('dataLayer not found');
                 }
 
+                window.handleReactiveRenderingBug();
+
                 scene.dispatchEvent(new CustomEvent('isolated-start', {
                     detail: {
                         model: isolated,
@@ -210,7 +220,7 @@ AFRAME.registerComponent('marker-react', {
             });
         });
 
-        this.el.addEventListener('markerLost', () => {
+        this.el.addEventListener('markerLost', (ev) => {
             const loader = document.querySelector('.instructions');
             if (loader) {
                 loader.style.display = 'none';
@@ -226,11 +236,12 @@ AFRAME.registerComponent('marker-react', {
                 return;
             }
 
-            isolatedButton.classList.add('hidden');
-            document.querySelector('.buttons')?.classList.add('hidden');
-            document.querySelector('[data-action="activate-info"')?.classList.add('hidden');
-            window.activeTitle = '';
-            window.activeDescription = '';
+            const lostMarkerCode = ev.target.getAttribute('value');
+
+            if (window.currentModel?.code === lostMarkerCode) {
+                // hide buttons only if marker lost is not in favor of another marker
+                document.querySelector('.buttons')?.classList.add('hidden');
+            }
         });
     }
 });
