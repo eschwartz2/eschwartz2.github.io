@@ -45,7 +45,7 @@
 
         <div class="camera-instructions">
             <div class="text"></div>
-            <a class="start-anchor" href="./ar.html">RESTART</a>
+            <a class="start-anchor" target="_blank" href="./ar.html">RESTART</a>
         </div>
 
         <div class="instructions">
@@ -82,7 +82,6 @@
         <a-scene
             vr-mode-ui="enabled: false;"
             device-orientation-permission-ui="enabled: false"
-            embedded
             renderer="logarithmicDepthBuffer: true;"
             gesture-detector
             gesture-handler="minScale: 0.25; maxScale: 10"
@@ -91,6 +90,7 @@
             <!-- Markes entities are added dynamically -->
 
             <a-entity id="cam" camera></a-entity>
+
             <a-entity id="isolated-cam" camera="active: false" look-controls>
                 <a-entity id="isolated-mode" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
                     model-resizer class="clickable" animation-mixer position="0 0 -3"></a-entity>

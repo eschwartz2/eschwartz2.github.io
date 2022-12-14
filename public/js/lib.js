@@ -14,7 +14,8 @@ const renderMarker = (datum, scene) => {
 
     const entity = document.createElement('a-entity');
     entity.setAttribute('model-resizer', true);
-    entity.setAttribute('animation-mixer', true);
+    entity.setAttribute('animation-mixer', {timeScale: 1});
+
     entity.classList.add('clickable');
 
     marker.appendChild(entity);
