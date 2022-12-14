@@ -1,0 +1,26 @@
+[
+  {
+    "id": 61,
+    "filename": "model.glb",
+    "title": "Title for 61 model",
+    "description": "Description for 61 model"
+  },
+  {
+    "id": 62,
+    "filename": "scene.glb",
+    "title": "Title for 62 model",
+    "description": ""
+  },
+  {
+    "id": 87,
+    "filename": "3d.glb",
+    "title": "Title for 87 model",
+    "description": "Description for 87 model"
+  },
+  {
+    "id": 90,
+    "filename": "scene.glb",
+    "title": "Title for 90 model",
+    "description": ""
+  }
+]

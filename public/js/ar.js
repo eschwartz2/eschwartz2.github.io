@@ -126,8 +126,9 @@ AFRAME.registerComponent('marker-react', {
             const isolatedButton = document.querySelector('[data-action="activate-isolated"');
 
             const modelCode = this.el.getAttribute('value');
+            const filename = this.el.getAttribute('filename');
             window.currentModel = {
-                src: `./models/model${modelCode}/scene.glb`,
+                src: `./models/model${modelCode}/${filename}`,
                 scale: this.el.getAttribute('scale'),
                 code: modelCode,
             };

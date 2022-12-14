@@ -4,7 +4,7 @@
         <link rel="icon" type="image/x-icon" href="./favicon.ico"/>
     </head>
 <html>
-    <script src="./vendor/aframe.js"></script>
+    <script src="./vendor/aframe-v1.0.4.min.js"></script>
     <script src="./vendor/ar.js"></script>
     <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
 
@@ -88,100 +88,7 @@
             gesture-handler="minScale: 0.25; maxScale: 10"
             arjs="sourceType: webcam; debugUIEnabled: false; patternRatio: 0.65; detectionMode: mono_and_matrix; matrixCodeType: 4x4_BCH_13_9_3;">
 
-            <a-marker type="barcode" marker-react value="61" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
-                smooth="true"
-                smoothCount="10"
-                smoothTolerance=".01"
-                smoothThreshold="5">
-                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
-
-                <div class="model-title">
-                    Title for the #61 model.
-                </div>
-
-                <div class="model-description">
-                    Long text description for the #61 model.
-                </div>
-            </a-marker>
-
-            <a-marker type="barcode" marker-react value="62" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
-                smooth="true"
-                smoothCount="10"
-                smoothTolerance=".01"
-                smoothThreshold="5">
-                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
-            </a-marker>
-
-            <a-marker type="barcode" marker-react value="87" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
-                smooth="true"
-                smoothCount="10"
-                smoothTolerance=".01"
-                smoothThreshold="5">
-                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
-            </a-marker>
-
-            <a-marker type="barcode" marker-react value="90" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
-                smooth="true"
-                smoothCount="10"
-                smoothTolerance=".01"
-                smoothThreshold="5">
-                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
-                <div class="model-title">
-                    Title for the #90 model.
-                </div>
-
-                <div class="model-description">
-                    Long text description for the #90 model.
-                </div>
-            </a-marker>
-
-            <a-marker type="barcode" marker-react value="115" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
-                smooth="true"
-                smoothCount="10"
-                smoothTolerance=".01"
-                smoothThreshold="5">
-                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
-            </a-marker>
-
-            <a-marker type="barcode" marker-react value="117" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
-                smooth="true"
-                smoothCount="10"
-                smoothTolerance=".01"
-                smoothThreshold="5">
-                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
-            </a-marker>
-
-            <a-marker type="barcode" marker-react value="123" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
-                smooth="true"
-                smoothCount="10"
-                smoothTolerance=".01"
-                smoothThreshold="5">
-                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
-            </a-marker>
-
-            <a-marker type="barcode" marker-react value="125" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
-                smooth="true"
-                smoothCount="10"
-                smoothTolerance=".01"
-                smoothThreshold="5">
-                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
-            </a-marker>
-
-            <a-marker type="barcode" marker-react value="126" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
-                smooth="true"
-                smoothCount="10"
-                smoothTolerance=".01"
-                smoothThreshold="5">
-                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
-            </a-marker>
-
-            <a-marker type="barcode" marker-react value="142" raycaster="objects: .clickable" emitevents="true" cursor="fuse: false; rayOrigin: mouse;"
-                smooth="true"
-                smoothCount="10"
-                smoothTolerance=".01"
-                smoothThreshold="5">
-                <a-entity model-resizer class="clickable" animation-mixer></a-entity>
-            </a-marker>
+            <!-- Markes entities are added dynamically -->
 
             <a-entity id="cam" camera></a-entity>
             <a-entity id="isolated-cam" camera="active: false" look-controls>

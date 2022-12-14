@@ -12,66 +12,34 @@ Suggested browser: Safari as preferred. Chrome works only on iOS 14 and later.
 
 # How to set up models for the AR
 
-Inside the `models` folder, please insert a new folder named as `model<value>` where "value" is the reference to the marker as it is
-used on the `ar.html` file.
+Inside the `models` folder, please insert a new folder named as `model<value>` where "value" is the reference to the marker number.
 
-For example:
+The app will render only the markers specified on `list.json` file.
 
-```html
-<a-marker 
-    value="61"
-    type="barcode" 
-    marker-react 
-    raycaster="objects: .clickable" 
-    emitevents="true" 
-    cursor="fuse: false; rayOrigin: mouse;"
-    smooth="true"
-    smoothCount="10"
-    smoothTolerance=".01"
-    smoothThreshold="5">
-    <a-entity model-resizer class="clickable" animation-mixer></a-entity>
-    
-    <div class="model-title">
-        Title for the #61 model.
-    </div>
+For each model, you have to specify the following information:
 
-    <div class="model-description">
-        Long text description for the #61 model.
-    </div>
-</a-marker>
+- id (number): the marker number
+- filename (string): the name of the 3D model file
+- title (string): the title of the resource (optional)
+- description (string): the description of the resource (optional)
 
-<a-marker 
-    value="62"
-    type="barcode" 
-    marker-react 
-    raycaster="objects: .clickable" 
-    emitevents="true" 
-    cursor="fuse: false; rayOrigin: mouse;"
-    smooth="true"
-    smoothCount="10"
-    smoothTolerance=".01"
-    smoothThreshold="5">
-    <a-entity model-resizer class="clickable" animation-mixer></a-entity>
-    
-    <div class="model-title">
-        Title for the #62 model.
-    </div>
+`filename` has to match exactly with the name of the 3D model file inside the `model<value>` folder. You have to use the .glb format for the 3D models.
 
-    <div class="model-description">
-        Long text description for the #62 model.
-    </div>
-</a-marker>
+Example:
 
-etc. etc.
+Say you have a model named `model.glb` inside the `model1` folder. You have to add the following information inside the `list.json` file:
+
+```json
+{
+  "id": 1,
+  "filename": "model.glb",
+  "title": "My model title",
+  "description": "My model description"
+}
 ```
 
-For example: for the first model, `61` is the value. We have to create a `model61` folder inside the `models` folder. On `model61` we should insert the 3D model in .glb format with name `scene.glb`.
-
-## How to add the info text for the models
-
-Inside the `<a-marker>` HTML tag, it is possible to add two HTML `div` elements, one to show the resource title and the other for the resource description. **If at least one of the two is available**, the "info button" is shown and the user can click on it to show the model info page.
-
-See on the examples above on how to add those information for a model by modifying the `ar.html` file.
+Title and description will be displayed on the app when the user will scan that marker, and later clicks on the "info" button.
+They will be displayed **only if at least one of the two is specified**.
 
 # How to create a .glb model from a .gltf file
 
