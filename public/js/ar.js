@@ -45,8 +45,29 @@ const openHelpDialog = () => {
     }
 
     dialog.classList.remove('hidden');
-    dialog.querySelector('.title').innerText = 'Support';
-    dialog.querySelector('.description').innerText = 'Here we can add text or links to give user assistance about this app.';
+    dialog.querySelector('.title').innerText = 'Need Support? \nTry the following';
+    dialog.querySelector('.description').innerHTML = `
+        <div class="issue">
+            <div>The screen is blank, or not loading</div>
+            Try reloading the page; be sure you accept the prompt requesting camera access.
+        </div>
+
+        <div class="issue">
+            <div>Nothing happens after scanning the code/markers</div>
+            Be sure there is adequate lighting (without shadows), the device is held steady, the marker is in the frame,
+            and you have a fast internet connection or 4G+ mobile signal.
+        </div>
+
+        <div class="issue">
+            <div>Parts of the AR tool still don’t work</div>
+            Power off your device completely, restart, and reattempt the scan. If possible, try in a different browser.
+        </div>
+
+        <div class="issue">
+            <div>Still experiencing issues?</div>
+            Contact us at <a href="mailto:ktpadmissions@kaplan.com">ktpadmissions@kaplan.com</a> and we'll help troubleshoot.
+        </div>
+    `;
 
     if (window.dataLayer) {
         window.dataLayer.push({

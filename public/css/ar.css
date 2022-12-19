@@ -71,3 +71,11 @@ html.a-fullscreen .a-canvas {
     position: absolute;
     bottom: 0;
 }
+
+.issue {
+    margin-bottom: 1rem;
+}
+
+.issue > div {
+    font-weight: bold;
+}
