@@ -276,8 +276,6 @@ window.addEventListener('arjs-video-loaded', () => {
     if (target) {
         target.style.display = 'flex';
     }
-
-    // window.eraseCookie('camera-denied');
 })
 
 window.addEventListener('camera-error', () => {
