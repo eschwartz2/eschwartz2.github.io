@@ -164,12 +164,13 @@ main {
 .camera-instructions .text {
     color: white;
     padding: 2rem;
-    text-transform: uppercase;
-    font-weight: b;
-    font-weight: bold;
     position: absolute;
     bottom: 15%;
     left: 0;
+}
+
+.camera-instructions .text li {
+    margin-bottom: 0.5rem;
 }
 
 .camera-instructions .start-anchor {

@@ -59,7 +59,7 @@ const openHelpDialog = () => {
         </div>
 
         <div class="issue">
-            <div>Parts of the AR tool still don’t work</div>
+            <div>Parts of the AR tool still don't work</div>
             Power off your device completely, restart, and reattempt the scan. If possible, try in a different browser.
         </div>
 
@@ -285,6 +285,6 @@ window.addEventListener('camera-error', () => {
     }
 
     div.style.display = 'flex';
-    div.querySelector('.text').innerText = window.IS_IOS ?
+    div.querySelector('.text').innerHTML = window.IS_IOS ?
         window.cameraiOSInstructions : window.cameraAndroidInstructions;
 })

@@ -62,14 +62,16 @@ window.IS_IOS = /iPad|iPhone|iPod/.test(window.navigator.userAgent) && !('MSStre
 window.IS_ANDROID = /(android)/i.test(window.navigator.userAgent);
 
 window.cameraiOSInstructions = `
-    You need to allow camera access to use Augmented Reality.
-    Please, click on "RESTART" and try again.
+    <p>You need to allow camera access to use Augmented Reality.</p>
+    <p>Please, click on "RESTART" to try again.</p>
 `;
 
 window.cameraAndroidInstructions = `
-    You need to allow camera access to use Augmented Reality. Please, follow these steps:
-    reset your settings for this website using the button on the left corner of
-    your Browser address bar,
-    then click on "Permissions" and "Reset permissions".
-    Then, click on "RESTART" to try again.
+    <p>You need to allow camera access to use Augmented Reality.</p>
+    <p>Please, follow these steps:</p>
+    <ul>
+        <li>click on the 'locker' button on the left corner of your browser address bar
+        <li>click on "Permissions" and "Reset permissions"</li>
+        <li>now back on this page, click on "RESTART" to try again.</li>
+    </ul>
 `;

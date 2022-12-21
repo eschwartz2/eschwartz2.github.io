@@ -29,6 +29,7 @@
 }
 
 #dialog .description {
+    margin-top: 1rem;
     height: calc(100% - 10rem);
     min-height: 300px;
     padding: 1rem;
