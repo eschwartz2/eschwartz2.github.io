@@ -41,6 +41,13 @@ Say you have a model named `model.glb` inside the `model1` folder. You have to a
 Title and description will be displayed on the app when the user will scan that marker, and later clicks on the "info" button.
 They will be displayed **only if at least one of the two is specified**.
 
+**IMPORTANT**: the `list.json` file has to be a valid JSON file. Please check the syntax before saving the file.
+For example:
+- no comma at the end of the last element of the array
+- on ID, if using a number, no quotes are needed, but if using an alphanumeric or string, quotes are needed
+
+In general, it is better to avoid whitespace on file names (when specifing "filename" on `list.json` file and on the actual file).
+
 # How to create a .glb model from a .gltf file
 
 It is possible to do the conversion with modeling software like Rhino, Maya, Blender, but also with a <a href="https://github.com/CesiumGS/gltf-pipeline">script command</a>.
