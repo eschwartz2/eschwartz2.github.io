@@ -199,33 +199,33 @@
   },
    {
     "id": 431,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "filename": "Ear1.glb",
+    "title": "Human Ear",
+    "description": ""
   },
    {
-    "id": 432,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "id": 432xxxxxx,
+    "filename": "Anatomical_Male_Head_Model_with_Neck_LQ.glb",
+    "title": "Human Head",
+    "description": ""
   },
    {
     "id": 433,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "filename": "Muscle_Cut_section.glb",
+    "title": "Muscle Cross Section",
+    "description": ""
   },
    {
-    "id": 434,
+    "id": 434xxxx,
     "filename": "model.glb",
     "title": "Title for 61 model",
     "description": "Description for 61 model"
   },
    {
     "id": 435,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "filename": "Heart_with_anatomical_cross_section.glb",
+    "title": "Human Heart",
+    "description": ""
   },
    {
     "id": 436,
