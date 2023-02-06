@@ -42,46 +42,52 @@
     "description": "When studying, it’s important to keep a calendar of the many things that you have to accomplish. If you don’t already have a thorough and comprehensive calendar, here are our recommendations: First, mark off the fixed blocks of time that you can’t really change (work, class, significant events). Second, mark off the flexible blocks of time that you want to keep (gym, birthdays, brunch or dinners). Third, mark off the personal blocks of time that you need to recharge (spa, family, alone). Now, there might not be many reasonable blocks of time remaining (if you take into account meals, sleeping, transportation), but mark those as your aspirational study times! If you make it a priority, those times can be turned into progress and growth in the topics and skills that you need to ace this exam! Good luck studying. ~"
   },
    {
+    "id": 404xxxxxxxxxx,
+    "filename": "Stopwatch.glb",
+    "title": "Timed Practice",
+    "description": "Often, the best test-takers are the ones who manage their time most efficiently. Skip questions (and mark or guess) that seem out of reach, spend a little more time on questions that you feel confident are nearly solved, and ensure that there’s at least time to attempt every question (so that you don’t miss any 'fast and easy' points near the end). The general rule for timing yourself while practicing is to divide your total study time into thirds. The first third, don’t use any timers, simply concentrate on learning contend and strategies (even if this is slow going). The second third, practice timed, but don’t worry if you miss a few things or still need work (that’s normal). The final third, focus on timing, and look for places that you can gain back a few seconds here or there. A classic example is in Quant: if you could do a single math step (say, multiplication or subtraction) even just one second faster, you could gain back 2-3 minutes of extra time across the average number of steps and calculations in that section. Wouldn’t that be great!"
+  },
+     {
     "id": 404,
-    "filename": "3d.glb",
-    "title": "Title for 87 model",
-    "description": "Description for 87 model"
+    "filename": "Bronchi_Alveoli_V01.glb",
+    "title": "Human Alveoli",
+    "description": "Pulmonary alveoli are the millions of hollow, distensible cavities in the lungs allowing pulmonary gas exchange. Oxygen from air is exchanged for carbon dioxide from blood (at the blood–air barrier) between the alveolar air and the pulmonary capillary. Oxygen is diffused into the capillaries to progress through the bloodstream and carbon dioxide released from the capillaries into the alveoli will be breathed out. Alveoli are more numerous in the blind-ended alveolar sacs than at the bronchioles or the walls of the alveolar ducts. Alveoli make up about 90 percent of the total lung volume."
   },
    {
-    "id": 405,
+    "id": 405x,
     "filename": "3d.glb",
     "title": "Title for 87 model",
     "description": "Description for 87 model"
   },
    {
     "id": 406,
-    "filename": "3d.glb",
-    "title": "Title for 87 model",
-    "description": "Description for 87 model"
+    "filename": "mambrane.glb",
+    "title": "The Cell Membrane",
+    "description": "The cell membrane, or plasma membrane, separates the cell interior from the outside environment (and also protects against harm from extracellular agents). The cell membrane is a lipid bilayer, with two layers of phospholipids. Cholesterols (a lipid component, not shown) are interspersed between the layers, to maintain membrane fluidity. The membrane also contains integral proteins (green and pink, with hollow cores) that span the membrane and serve as membrane transporters, and glycolipids embedded in the outer lipid layer (orange, branched structures) that facilitate interaction with the cell's environment. The cell membrane is selectively permeable to ions and organic molecules, so controls the movement of substances in and out of cells and organelles through diffusion, facilitated diffusion, and active transport mechanisms."
   },
    {
     "id": 407,
-    "filename": "3d.glb",
-    "title": "Title for 87 model",
-    "description": "Description for 87 model"
+    "filename": "mitosis_versus_meiosis.glb",
+    "title": "Mitosis vs Meiosis",
+    "description": "In the cell cycle, mitosis allows replicated chromosomes to be separated into two new nuclei. Cell division by mitosis creates genetically identical daughter cells, with exactly the same total number of chromosomes (one round of equational division). You can remember mitosis has ‘to’ right in the name = two daughter cells created. Contrastingly, meiosis divides germ cells in sexually-reproducing organisms, producing the gametes (sperm or egg) via a reductional division. Meiosis requires two rounds of division, resulting in four cells with one copy of each chromosome (haploid). Additionally, at the metaphase plate (prior to division), genetic material from paternal and maternal copies of each chromosome is crossed over. You can remember that meiosis has four vowels = four daughter cells created. "
   },
    {
     "id": 408,
-    "filename": "3d.glb",
-    "title": "Title for 87 model",
-    "description": "Description for 87 model"
+    "filename": "DNA.glb",
+    "title": "DNA Double Helix",
+    "description": "Deoxyribonucleic acid (DNA) has two polynucleotide chains that form a double helix. This contains genetic instructions to develop, function, grow, maintain, and reproduce all known organisms and many viruses. Nucleic acids are essential for all known forms of life (as are proteins, lipids, and complex carbohydrates). Each nucleotide strand of DNA is composed of a nitrogen-containing nucleobase: cytosine [C], guanine [G], adenine [A] or thymine [T]), as well as deoxyribose (sugar) and a phosphate group. The nucleotides are joined from the sugar of one nucleotide to the phosphate of the next, creating an alternating sugar-phosphate backbone. The nitrogenous bases are bound together as A with T (two H-bonds) or C with G (three H-bonds). In DNA, there are pyrimidines: thymine and cytosine, or purines: adenine and guanine."
   },
    {
     "id": 409,
-    "filename": "3d.glb",
-    "title": "Title for 87 model",
-    "description": "Description for 87 model"
+    "filename": "heamoglobin.glb",
+    "title": "Hemoglobin",
+    "description": "Hemoglobin (Hb or Hgb) is the iron-containing oxygen-transport present in red blood cells (erythrocytes) of almost all vertebrates. Hemoglobin in human blood carries oxygen from the lungs to vascularize the tissues of the body. Hemoglobin releases oxygen to cells that require aerobic respiration, to provide the energy to power human metabolism. Hemoglobin has a quaternary structure, and most of the amino acids in hemoglobin form alpha helices connected by short non-helical segments. The center of each alpha or beta subunit is the heme group with iron (shown as a small orange ball) at the center of the porphyrin ring (nitrogen connections shown in blue)."
   },
    {
     "id": 410,
     "filename": "Tricera_V01.glb",
     "title": "Triceratops",
-    "description": "Triceratops is an herbivorous dinosaur from the Late Cretaceous period. It a non-avian dinosaur, and became extinct in the Cretaceous–Paleogene extinction (66 million years ago). The name Triceratops means “three-horned face”, and refers to the dinosaur’s distinctive features. Triceratops is from the Kingdom: Animalia, Phylum: Chordata, Clade: Dinosauria."
+    "description": "Triceratops is an herbivorous dinosaur from the Late Cretaceous period. It a non-avian dinosaur, and became extinct in the Cretaceous–Paleogene extinction (66 million years ago). The name Triceratops means 'three-horned face', and refers to the dinosaur’s distinctive features. Triceratops is from the Kingdom: Animalia, Phylum: Chordata, Clade: Dinosauria."
   },
    {
     "id": 411,
@@ -357,7 +363,7 @@
     "id": 456,
     "filename": "Tricera_V01.glb",
     "title": "Triceratops",
-    "description": "Triceratops is an herbivorous dinosaur from the Late Cretaceous period. It a non-avian dinosaur, and became extinct in the Cretaceous–Paleogene extinction (66 million years ago). The name Triceratops means “three-horned face”, and refers to the dinosaur’s distinctive features. Triceratops is from the Kingdom: Animalia, Phylum: Chordata, Clade: Dinosauria."
+    "description": "Triceratops is an herbivorous dinosaur from the Late Cretaceous period. It a non-avian dinosaur, and became extinct in the Cretaceous–Paleogene extinction (66 million years ago). The name Triceratops means 'three-horned face', and refers to the dinosaur’s distinctive features. Triceratops is from the Kingdom: Animalia, Phylum: Chordata, Clade: Dinosauria."
   },
      {
     "id": 457,
