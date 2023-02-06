@@ -217,7 +217,7 @@
   },
    {
     "id": 437000000000000,
-    "filename": "Lungs_V02.glb,
+    "filename": "Lungs_V02.glb",
     "title": "Human Lungs",
     "description": ""
   },
@@ -409,39 +409,39 @@
   },
      {
     "id": 469,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "filename": "Boy.glb",
+    "title": "Young Boy",
+    "description": ""
   },
      {
     "id": 470,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "filename": "Apple.glb",
+    "title": "Apple (Rosaceae)",
+    "description": ""
   },
      {
     "id": 471,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "filename": "Books.glb",
+    "title": "Studying Setup",
+    "description": ""
   },
      {
     "id": 472,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "filename": "Pens_Pencils.glb",
+    "title": "Practing Setup",
+    "description": ""
   },
      {
     "id": 473,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "filename": "Fruits.glb",
+    "title": "Assorted Fruits",
+    "description": ""
   },
      {
     "id": 474,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "filename": "Pens_Pencils.glb",
+    "title": "Practice Setup",
+    "description": ""
   },
      {
     "id": 475,
