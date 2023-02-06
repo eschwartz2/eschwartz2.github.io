@@ -174,16 +174,16 @@
     "description": "Lymphocytes are white blood cells (WBCs) that include cell-mediated and cytotoxic immunity subtypes natural killer cells (innate), and T cells (adaptive), as well as blood-based B cells (antibody-mediated, adaptive). Lymphocytes make up 18 to 42% of WBCs in human blood. T cells that mature in the thymus and B cells that mature in the bone marrow are the primary adaptive immune response components. Both types of cells recognize specific antigens (during antigen presentation), and, once identified, the generate a response to eliminate the pathogens or infected cells. B cells make antibodies, which neutralize bacteria and viruses. T helper cells make cytokines that direct the immune response, while cytotoxic T cells make toxic enzyme granules that directly destroy infected cells. B cells and T cells remember antigens that they have seen, by forming memory cells for each specific pathogen encountered. In this way, an animal is able to have a rapid or stronger response to that same pathogen at a later time."
   },
    {
-    "id": 427xxxxxxxx,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "id": 427,
+    "filename": "antigen_V05.glb",
+    "title": "Antibody",
+    "description": ""
   },
    {
     "id": 428,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "filename": "Nerve.glb",
+    "title": "Nerve Cells",
+    "description": ""
   },
    {
     "id": 429,
