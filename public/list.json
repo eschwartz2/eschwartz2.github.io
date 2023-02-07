@@ -306,28 +306,28 @@
     "description": ""
   },
    {
-    "id": 452000000000000,
+    "id": 452,
     "filename": "green_sea_turtle.glb",
     "title": "Sea Turtle",
     "description": ""
   },
    {
-    "id": 45300000000000,
+    "id": 453,
     "filename": "blackhead_ball_python.glb",
     "title": "Blackhead Ball Python",
     "description": ""
   },
    {
     "id": 454,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "filename": "Crocodylus_Kill_Gazelle1.glb",
+    "title": "Crocodile and Gazelle",
+    "description": ""
   },
    {
-    "id": 4550000000000000,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "id": 455,
+    "filename": "phage.glb",
+    "title": "Virus",
+    "description": ""
   },
      {
     "id": 456,
@@ -336,10 +336,10 @@
     "description": "Triceratops is an herbivorous dinosaur from the Late Cretaceous period. It a non-avian dinosaur, and became extinct in the Cretaceous–Paleogene extinction (66 million years ago). The name Triceratops means 'three-horned face', and refers to the dinosaur’s distinctive features. Triceratops is from the Kingdom: Animalia, Phylum: Chordata, Clade: Dinosauria."
   },
      {
-    "id": 45700000000000000,
+    "id": 4570000000000000000000000000000000000000000000000000000,
     "filename": "model.glb",
     "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "description": ""
   },
      {
     "id": 458,
@@ -379,9 +379,9 @@
   },
      {
     "id": 464,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "filename": "Lion.glb",
+    "title": "Lion (Panthera)",
+    "description": ""
   },
      {
     "id": 465,
@@ -464,50 +464,50 @@
      {
     "id": 478,
     "filename": "17.glb",
-    "title": "",
+    "title": "Elephant Block Model",
     "description": ""
   },
      {
-    "id": 479000000000000000,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "id": 479,
+    "filename": "THREEBLOCKS.glb",
+    "title": "Three Blocks Staggered Model",
+    "description": ""
   },
      {
-    "id": 48011111111111111111,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "id": 480,
+    "filename": "TWOSTEP.glb",
+    "title": "Two Steps Model",
+    "description": ""
   },
      {
-    "id": 481000000000000000,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "id": 481,
+    "filename": "BLOCKWITHV.glb",
+    "title": "Wedge Cutout Notches Model",
+    "description": ""
   },
      {
-    "id": 482000000000000000,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "id": 482,
+    "filename": "CUBEBOTTOMCUT.glb",
+    "title": "Top Front End Notch Model",
+    "description": ""
   },
      {
-    "id": 483000000000000000,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "id": 483,
+    "filename": "BLOCKCOUTOUT.glb",
+    "title": "Cutout Block Model",
+    "description": ""
   },
      {
-    "id": 484000000000000000,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "id": 484,
+    "filename": "CUBEs.glb",
+    "title": "Cube Counting Model",
+    "description": ""
   },
      {
-    "id": 485000000000000000,
-    "filename": "model.glb",
-    "title": "Title for 61 model",
-    "description": "Description for 61 model"
+    "id": 485,
+    "filename": "PATTERNFOLDING.glb",
+    "title": "Folded Cube Shading",
+    "description": ""
   },
      {
     "id": 486,
@@ -524,13 +524,13 @@
      {
     "id": 488,
     "filename": "model.glb",
-    "title": "SPARE CODE THAT WE ARE NOT CURRENTLY USING FOR ANYTHING",
+    "title": "SPARE CODE THAT WE ARE NOT CURRENTLY USING FOR ANYTHING 000000000",
     "description": "SPARE CODE"
   },
      {
     "id": 489,
     "filename": "model.glb",
-    "title": "SPARE CODE THAT WE ARE NOT CURRENTLY USING FOR ANYTHING",
+    "title": "SPARE CODE THAT WE ARE NOT CURRENTLY USING FOR ANYTHING 000000000",
     "description": "SPARE CODE"
   },
      {
