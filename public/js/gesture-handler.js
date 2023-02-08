@@ -52,6 +52,8 @@ AFRAME.registerComponent("gesture-handler", {
         this.scene.addEventListener("markerFound", (e) => {
             const marker = e.target;
 
+            window.setMarker(marker);
+
             if (window.isolated) {
                 return;
             }

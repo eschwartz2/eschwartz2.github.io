@@ -124,6 +124,8 @@ window.addEventListener('load', () => {
 AFRAME.registerComponent('marker-react', {
     init: function() {
         this.el.addEventListener('markerFound', () => {
+            window.setMarker(this.el);
+
             if (window.isolated) {
                 return;
             }
@@ -141,6 +143,7 @@ AFRAME.registerComponent('marker-react', {
 
             const modelCode = this.el.getAttribute('value');
             const filename = this.el.getAttribute('filename');
+
             window.currentModel = {
                 src: `./models/model${modelCode}/${filename}`,
                 scale: this.el.getAttribute('scale'),
